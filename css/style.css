@@ -103,49 +103,49 @@ body {
     left: 0;
     width: 100%;
     z-index: 50;
-    &__container {
-        display: flex;
-        min-height: 114px;
-        align-items: center;
-    }
-    &__logo {
-        position: relative;
-        z-index: 5;
-        margin-right: 15px;
-        & img {
-            width: 40px;
-        }
-        & img:hover {
-            opacity: var(--button-opacity);
-        }
-    }
-    &__menu {
-        text-transform: uppercase;
-        flex: 1 1 auto;
-    }
-    &__button {
-        position: relative;
-        z-index: 5;
-        flex: 0 0 200px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
+}
+
+.header__container {
+    display: flex;
+    min-height: 114px;
+    align-items: center;
+}
+.header__logo {
+    position: relative;
+    z-index: 5;
+    margin-right: 15px;
+}
+.header__logo img {
+    width: 40px;
+}
+.header__logo img:hover {
+    opacity: var(--button-opacity);
+}
+.header__menu {
+    text-transform: uppercase;
+    flex: 1 1 auto;
+}
+.header__button {
+    position: relative;
+    z-index: 5;
+    flex: 0 0 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* ------------------ */
 .menu {
     display: flex;
     justify-content: flex-end;
-    &__list {
-        display: flex;
-        list-style: none;
-    }
-    &__item {
-        margin: 0 30px 0 0;
-    }
 }
-
+.menu__list {
+    display: flex;
+    list-style: none;
+}
+.menu__item {
+    margin: 0 30px 0 0;
+}
 
 /* ----- break points for header elements ----- */
 @media (max-width: 991.98px) {
@@ -219,13 +219,12 @@ body {
     color: var(--main-txtcolor);
     letter-spacing: 1px;
     transition: background-color 0.3s ease 0s;
-    &:hover {
-        background-color: var(--main-txtcolor);
-        opacity: var(--button-opacity);
-        color: var(--light-txtcolor);
-    }
 }
-
+.menu__link:hover {
+    background-color: var(--main-txtcolor);
+    opacity: var(--button-opacity);
+    color: var(--light-txtcolor);
+}
 
 /* ------------------ */
 .button {
@@ -240,13 +239,13 @@ body {
     padding: 14px 30px;
     border-radius: 8px;
     transition: background-color 0.3s ease 0s;
-    &:hover {
-        background-color: var(--main-txtcolor);
-        opacity: var(--button-opacity);
-    }
-    &-dark {
-        background-color: var(--main-txtcolor);
-    }
+}
+.button:hover {
+    background-color: var(--main-txtcolor);
+    opacity: var(--button-opacity);
+}
+.button-dark {
+    background-color: var(--main-txtcolor);
 }
 
 /* ----- burger menu ----- */
@@ -264,17 +263,18 @@ body {
         justify-content: space-between;
         margin: 0 0 0 20px;
         z-index: 1;
-        &::before,
-        &::after {
+    }
+    .icon-menu::before,
+    .icon-menu::after {
         content: "";
         background-color: var(--main-txtcolor);
         height: 2px;
     }
-    & span {
+    .icon-menu span {
         background-color: var(--main-txtcolor);
         height: 2px;
     }
-    }
+
     .close-icon-menu {
         flex: 0 0 30px;
         height: 30px;
@@ -305,6 +305,7 @@ body {
         display: flex;
     }
 }
+
 /* ===== Main Content ===== */
 
 .main {
@@ -312,14 +313,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    &__container {
-        display: flex;
-        /* flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between; */
-        min-height: 100%;
-        padding: 144px 0 0 0;
-    }
+}
+.main__container {
+    display: flex;
+    /* flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between; */
+    min-height: 100%;
+    padding: 144px 0 0 0;
 }
 
 /* ===== Block: Aside ===== */
@@ -333,12 +334,11 @@ body {
 /* ----- Section: Introduction  ----- */
 .intro {
     position: relative;
-    &-box {
-        padding: 0;
-        margin: 0;
-    }
 }
-
+.intro-box {
+    padding: 0;
+    margin: 0;
+}
 .title__content {
     display: flex;
     flex-direction: column;
@@ -370,11 +370,10 @@ body {
     left: 0;
     display: flex;
     margin-top: 50px;
-    &__content {
-        padding: 0 15px 15px 10px;
-    }
 }
-
+.box__content {
+    padding: 0 15px 15px 10px;
+}
 .title-box {
     display: flex;
     align-items: center;
@@ -429,11 +428,11 @@ body {
 .article {
     float: right;
     min-width: 737px;
-    &__block {
-        padding-left: 63px;
-    }
 }
 
+.article__block {
+    padding-left: 63px;
+}
 .box-text {
     top: 0;
     left: 0;
@@ -547,23 +546,22 @@ pre {
     width: 100%;
     z-index: 50;
     background: var(--light-linecolor);
-    &__container {
-        min-height: 150px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__item {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-    }
-    &-text {
-        align-self: flex-start;
-    }
 }
-
+.footer__container {
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.footer-text {
+    align-self: flex-start;
+}
 .git-logo,
 .rss-logo {
     height: 55px;
