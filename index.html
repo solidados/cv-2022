@@ -34,7 +34,7 @@
                     </nav>
                 </div>
                 <div class="header__button">
-                    <a href="docs/CV_Frontend_Pavel_Konyakhin.pdf" download="" class="button button-dark">Download</a>
+                    <a href="docs/CV_Frontend_Pavel_Konyakhin.pdf" download="CV_Frontend_Pavel_Konyakhin.pdf" class="button button-dark">Download</a>
                     <a href="#open" class="icon-menu"><span></span></a>
                     <a href="#close" class="close-icon-menu"></a>
                 </div>
@@ -365,7 +365,17 @@ if (a >= 0 && b >= 0) {
             </div>
         </footer>
     </div>
+    <script>
+        var element = document.createElement('a');
+        var clearUrl = base64.replace(/^data:image\/\w+;base64,/, '');
 
+        // element.setAttribute('href', 'data:attachment/image' + base64);
+        element.setAttribute('href', 'data:application/octet-stream;base64,' + encodeURIComponent(clearUrl));
+        element.setAttribute('download', 'docs/CV_Frontend_Pavel_Konyakhin.pdf');
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element)
+    </script>
 </body>
 
 </html>
