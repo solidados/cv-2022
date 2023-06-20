@@ -5,7 +5,7 @@
 ### Contacts ###
 
 **Location**    |  Yerevan, Armenia  
-**Phone**       |  +374 41 454741  
+**Phone**       |  +374 55 4354741  
 **Email**       |  pavel.konyakhin@gmail.com  
 **GitHub**      |  [solidados](https://github.com/solidados)  
 **LinkedIn**    |  [Pavel Konyakhin](https://www.linkedin.com/in/solidados/)  
@@ -18,28 +18,43 @@ Hardworker | Responsible | Entrained | Miscellaneous | Capable Of Learning | Out
 ### Skills ###
 
 > - HTML5, CSS3  
-> - JavaScript Basics  
-> - SQL  
+> - JavaScript, Typescript, React  
+> - NodeJS  
 
-> - VS Code, Sublime Text, Brackets  
+> - VS Code, WebStorm  
 > - MySQL, Microsoft SQL Server  
 > - Agility CMS, GraphCMS  
-> - Git, GitHub, GitKraken, Terminal
-> - Figma, Photoshop, Illustrator
+> - Git, GitHub, Unix Command prompt  
+> - Figma, Photoshop, Illustrator  
 
 ## Code sample ##
 
-```javascript
-    a = parseInt(prompt ("a:"));
-    b = parseInt(prompt ("b:"));
-    function Max(x, y){
-      if (x > y)
-        return x;
-      else
-        return y;
-    }
-    z = Max (2 * b, a) * Max (2 * a - b, b);
-    console.log(z);
+```typescript
+class UserModel {
+  private id: number;
+  private name: string;
+  private email: string;
+
+  constructor(id: number, name: string, email: string) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+  }
+
+  getId(): number {
+    return this.id;
+  }
+
+  getName(): string {
+    return this.name;
+  }
+
+  getEmail(): string {
+    return this.email;
+  }
+}
+
+export default UserModel;
 ```
 
 ## Experience ##
@@ -64,8 +79,12 @@ Hardworker | Responsible | Entrained | Miscellaneous | Capable Of Learning | Out
 
 ## Education ##
 
+#### 2022 ####
+* Rolling Scopes School | *Frontend web development* | Javascript+React staged courses 
+* Epam | *Frontend web development* | introduction courses
+
 #### 2020 ####  
-* GeekBrains University | *Front End Development*  
+* GeekBrains University | *Frontend Development*  
 
 #### 2018 ####  
 * Massachusetts Institute of Technology | *logistics & supply chain* | some courses  
