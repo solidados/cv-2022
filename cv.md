@@ -5,7 +5,7 @@
 ### Contacts ###
 
 **Location**    |  Yerevan, Armenia  
-**Phone**       |  +374 55 4354741  
+**Phone**       |  +374 55 434741  
 **Email**       |  pavel.konyakhin@gmail.com  
 **GitHub**      |  [solidados](https://github.com/solidados)  
 **LinkedIn**    |  [Pavel Konyakhin](https://www.linkedin.com/in/solidados/)  
@@ -18,10 +18,12 @@ Hardworker | Responsible | Entrained | Miscellaneous | Capable Of Learning | Out
 ### Skills ###
 
 > - HTML5, CSS3  
-> - JavaScript, Typescript, React  
-> - NodeJS  
+> - JavaScript, TypeScript  
+> - React, NodeJS  
+> - Webpack  
+> - i-BEM, BEM-MVC
 
-> - VS Code, WebStorm  
+> - VSCode, WebStorm  
 > - MySQL, Microsoft SQL Server  
 > - Agility CMS, GraphCMS  
 > - Git, GitHub, Unix Command prompt  
