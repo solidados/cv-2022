@@ -4,11 +4,11 @@
 
 ### Contacts ###
 
-**Location**    |  Yerevan, Armenia
-**Phone**       |  +374 41 454741
-**Email**       |  pavel.konyakhin@gmail.com
-**GitHub**      |  [solidados](https://github.com/solidados)
-**LinkedIn**    |  [Pavel Konyakhin](https://www.linkedin.com/in/solidados/)
+**Location**    |  Yerevan, Armenia  
+**Phone**       |  +374 55 434741  
+**Email**       |  pavel.konyakhin@gmail.com  
+**GitHub**      |  [solidados](https://github.com/solidados)  
+**LinkedIn**    |  [Pavel Konyakhin](https://www.linkedin.com/in/solidados/)  
 **Discord**     |  Pavel Konyakhin(@solidados)
 
 ### About ###
@@ -17,32 +17,46 @@ Hardworker | Responsible | Entrained | Miscellaneous | Capable Of Learning | Out
 
 ### Skills ###
 
-> - HTML5, CSS3
-> - JavaScript, React, Typescript
-> - SQL
+> - HTML5, CSS3  
+> - JavaScript, TypeScript  
+> - React, NodeJS  
+> - Webpack  
+> - i-BEM, BEM-MVC
 
-> - VSCode, WebStorm, SublimeText
-> - MySQL, Microsoft SQL Server
-> - Agility CMS, GraphCMS
-> - Git, GitHub, GitKraken, Terminal
-> - Figma, Photoshop, Illustrator
+> - VSCode, WebStorm  
+> - MySQL, Microsoft SQL Server  
+> - Agility CMS, GraphCMS  
+> - Git, GitHub, Unix Command prompt  
+> - Figma, Photoshop, Illustrator  
 
 ## Code sample ##
 
-```javascript
-function binarySearch(elem, arr) {
-    arr.sort((a, b) => a - b);
+```typescript
+class UserModel {
+  private id: number;
+  private name: string;
+  private email: string;
 
-    let start = 0,
-        end = arr.length,
-        mid;
+  constructor(id: number, name: string, email: string) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+  }
 
-    while (start < end) {
-        mid = Math.floor((start + end) / 2);
-        elem <= arr[mid] ? end = mid : start = mid + 1;
-    }
-    return (elem === arr[start] ? start : -1);
+  getId(): number {
+    return this.id;
+  }
+
+  getName(): string {
+    return this.name;
+  }
+
+  getEmail(): string {
+    return this.email;
+  }
 }
+
+export default UserModel;
 ```
 
 ## Experience ##
@@ -67,8 +81,12 @@ function binarySearch(elem, arr) {
 
 ## Education ##
 
-#### 2020 ####
-* GeekBrains University | *Front End Development*
+#### 2022 ####
+* Rolling Scopes School | *Frontend web development* | Javascript+React staged courses 
+* Epam | *Frontend web development* | introduction courses
+
+#### 2020 ####  
+* GeekBrains University | *Frontend Development*  
 
 #### 2018 ####
 * Massachusetts Institute of Technology | *logistics & supply chain* | some courses
