@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                         </section>
-                        
+
                         <!-- ----- Contacts ----- -->
                         <section id="contacts" class="contacts">
                             <div class="box">
@@ -164,9 +164,9 @@
                             <div class="box-text card__box">
                                 <div class="card__text">
                                     <ul>
-                                        <li>HTML5, CSS3</li>
-                                        <li>JavaScript Basics</li>
-                                        <li>SQL</li>
+                                        <li>HTML5, CSS3, SASS</li>
+                                        <li>JavaScript + React</li>
+                                        <li>WebPack, Gulp</li>
                                     </ul>
                                 </div>
 
@@ -325,15 +325,17 @@
                             <div class="box-text">
                                 <code>
 <pre>
-var a = +parseInt(prompt('Enter a'));
-var b = +parseInt(prompt('Enter b'));
+// вспомогательный метод для вывода Linkedlist в виде массива
 
-if (a >= 0 && b >= 0) {
-    console.log('The difference between two numbers is: ' + (a - b));
-} else if (a < 0 && b < 0) {
-    console.log('The product of two number is: ' + (a * b));
-} else {
-    console.log('The sum of two numbers is: ' + (a + b));
+function toArray () {
+    const nodes = [];
+    let currentNode = this.head;
+
+    while(currentNode) {
+        nodes.push(currentNode);
+        currentNode = currentNode.next;
+    }
+    return nodes;
 }
 </pre>
                                     </code>
@@ -366,12 +368,6 @@ if (a >= 0 && b >= 0) {
             </div>
         </footer>
     </div>
-
-    <!--     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js">
-        import smoothscroll from 'smoothscroll-polyfill';
-        // kick off the polyfill!
-        smoothscroll.polyfill();
-    </script> -->
 </body>
 
 </html>
