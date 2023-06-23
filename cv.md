@@ -1,5 +1,5 @@
 # Curriculum Vitae #
-![Picture](src/img/avatar3.png)
+![Picture](./img/avatar3.png)
 ## Pavel Konyakhin ##
 
 ### Contacts ###
